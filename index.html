@@ -1,175 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SamIT – Edullista IT-apua</title>
-  <style>
-    /* Perustyyli */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff;
-      color: #111;
-      line-height: 1.6;
-    }
-   <header style="background-color: #000; color: #fff; padding: 1.5rem 2rem; text-align: center;">
-  <h1 style="margin: 0; font-size: 2.5rem; letter-spacing: 3px;">SamIT</h1>
-  
-  <!-- KUVA -->
-  <img src="kuva.png" alt="SamIT kuva" 
-       style="margin-top: 15px; border: 3px solid #fff; border-radius: 10px; max-width: 300px; width: 100%; height: auto;">
-  
-  <p style="font-style: italic; margin-top: 0.5rem; font-size: 1.2rem; color: #ddd;">
-    Tarjoamme edullista IT-apua Varkaudessa
-  </p>
-</header>
-
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      border-bottom: 3px solid #000;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
-    p, ul {
-      font-size: 1.1rem;
-      color: #222;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    ul li {
-      margin-bottom: 0.6rem;
-    }
-
-    /* Yhteystiedot */
-    .contact-info p {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin: 0.3rem 0;
-    }
-    .contact-info a {
-      color: #000;
-      text-decoration: underline;
-    }
-
-    /* Lomake */
-    form {
-      max-width: 600px;
-      margin-top: 1rem;
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 0.7rem;
-      margin-top: 0.5rem;
-      border: 2px solid #000;
-      border-radius: 4px;
-      font-size: 1rem;
-      box-sizing: border-box;
-    }
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-    button {
-      background-color: #000;
-      color: #fff;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      margin-top: 1rem;
-      cursor: pointer;
-      font-size: 1.1rem;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #444;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    /* Responsiivisuus */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      main {
-        margin: 1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamIT – Edullista IT-apua</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #000;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
+
+<header>
     <h1>SamIT</h1>
-    <p>Kaksi nuorta lukiolaista tarjoavat edullista IT-apua Varkauden alueella</p>
-  </header>
+    <nav>
+        <a href="#meista">Meistä</a>
+        <a href="#palvelut">Palvelut</a>
+        <a href="#yhteystiedot">Yhteystiedot</a>
+    </nav>
+</header>
 
-  <main>
-    <section>
-      <h2>Meistä</h2>
-      <p>Olemme SamIT, kaksi innokasta lukiolaista poikaa, joiden tavoitteena on tarjota mahdollisimman edullista ja laadukasta IT-apua ikäihmisille ja muille avun tarvitsijoille Varkauden alueella. Teemme ilmaisia kotiinkäyntejä, jotta apu olisi helposti saavutettavissa.</p>
-      <p>Tarjoamme asiantuntevaa tukea tietokoneiden, läppäreiden, tulostimien, televisioiden ja puhelimien kanssa. Lisäksi kasaamme tietokoneita ja autamme erilaisten laitteiden käyttöönotossa ja käytössä.</p>
-    </section>
+<section>
+    <img src="kuva.jpg" alt="SamIT tiimi">
 
-    <section>
-      <h2>Palvelumme</h2>
-      <ul>
-        <li>Tietokoneiden ja läppäreiden käyttöönotto, vianmääritys ja huolto</li>
-        <li>Tulostimien ja televisioiden asennus ja opastus</li>
-        <li>Puhelinten ja muiden älylaitteiden käyttöönotto ja neuvonta</li>
-        <li>Tietokoneiden kasaus ja komponenttien vaihto</li>
-        <li>Yksilöllinen opastus ja koulutus IT-laitteiden käytössä</li>
-        <li>Ilmaiset kotiinkäynnit Varkauden alueella</li>
-      </ul>
-    </section>
+    <h2 id="meista">Meistä</h2>
+    <p>SamIT on kahden nuoren, innokkaan lukiolaisen perustama yritys, jonka tavoitteena on tarjota 
+       mahdollisimman edullista ja helposti saatavilla olevaa IT-apua. Olemme intohimoisia teknologian 
+       käyttäjiä ja ratkaisijoita, ja haluamme auttaa ihmisiä arjen digipulmissa.</p>
 
-    <section>
-      <h2>Yhteystiedot</h2>
-      <div class="contact-info">
-        <p>Puhelin: <a href="tel:+358453277008">045 327 7008</a></p>
-        <p>Sähköposti: <a href="mailto:samit.nyt@gmail.com">samit.nyt@gmail.com</a></p>
-      </div>
+    <p>Erikoisuutemme on ilmaiset kotiinkäynnit – tulemme luoksesi ja ratkaisemme ongelmat paikan päällä, 
+       ilman piilokuluja. Meille asiakaslähtöisyys ja ystävällinen palvelu ovat kaiken perusta.</p>
 
-      <h3>Ota yhteyttä lomakkeella</h3>
-      <form action="https://formspree.io/f/xdkdyveg" method="POST">
-        <label for="name">Nimi</label>
-        <input type="text" id="name" name="name" placeholder="Nimesi" required />
-        
-        <label for="email">Sähköposti</label>
-        <input type="email" id="email" name="email" placeholder="Sähköpostisi" required />
-        
-        <label for="message">Viesti</label>
-        <textarea id="message" name="message" placeholder="Kirjoita viestisi tähän..." required></textarea>
-        
-        <button type="submit">Lähetä viesti</button>
-      </form>
-    </section>
-  </main>
+    <h2 id="palvelut">Palvelut</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Tietokoneiden ja läppäreiden huolto</h3>
+            <p>Ratkaisemme hitaat koneet, asennamme ohjelmia ja poistamme viruksia. Autamme myös 
+               laitteiden päivityksessä.</p>
+        </div>
+        <div class="service">
+            <h3>Tulostimet ja verkko-ongelmat</h3>
+            <p>Korjaamme tulostinongelmat, asennamme laitteet ja laitamme Wi-Fi-verkon kuntoon.</p>
+        </div>
+        <div class="service">
+            <h3>TV:t ja kodin viihdejärjestelmät</h3>
+            <p>Asennamme ja säädämme televisiot, äänentoistojärjestelmät ja suoratoistopalvelut.</p>
+        </div>
+        <div class="service">
+            <h3>Puhelinapu</h3>
+            <p>Opastamme älypuhelinten käytössä, siirrämme tiedot ja asetamme sovellukset kuntoon.</p>
+        </div>
+        <div class="service">
+            <h3>Tietokoneiden kasaus</h3>
+            <p>Kokoamme tietokoneet toiveidesi mukaan, asennamme käyttöjärjestelmän ja testaamme toiminnan.</p>
+        </div>
+        <div class="service">
+            <h3>Laitteiden käyttöönotto ja opastus</h3>
+            <p>Olipa kyseessä uusi laite tai ohjelma, autamme sen käyttöönotossa ja opetamme tarvittavat taidot.</p>
+        </div>
+    </div>
 
-  <footer>
-    <p>© 2025 SamIT</p>
-  </footer>
+    <h2 id="yhteystiedot">Yhteystiedot</h2>
+    <p>📞 Puhelin: <a href="tel:+358453277008">045 327 7008</a><br>
+       📧 Sähköposti: <a href="mailto:samit.nyt@gmail.com">samit.nyt@gmail.com</a></p>
+
+    <form action="https://formspree.io/f/xdkdyveg" method="POST">
+        <label>Nimi:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Sähköposti:</label><br>
+        <input type="email" name="email" required><br><br>
+        <label>Viesti:</label><br>
+        <textarea name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Lähetä</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 SamIT – Edullista IT-apua</p>
+</footer>
+
 </body>
 </html>
