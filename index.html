@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamIT – Edullista IT-apua</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #0f0;
+        }
+        header, footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #0f0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #0f0;
+            background-color: #111;
+            color: #0f0;
+        }
+        button {
+            background-color: #0f0;
+            color: #000;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0c0;
+        }
+        a {
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SamIT</h1>
+        <p>Kaksi nuorta lukiolaista tarjoavat edullista IT-apua</p>
+    </header>
+    <div class="container">
+        <h2>Palvelumme</h2>
+        <p>Tarjoamme apua ja opastusta laitteiden kanssa Varkauden alueella. Teemme ilmaisia kotiinkäyntejä!</p>
+        <ul>
+            <li>Tietokoneiden, läppäreiden, puhelimien, tulostimien ja televisioiden tuki</li>
+            <li>Laitteiden käyttöönotto ja opastus</li>
+            <li>Tietokoneiden kasauspalvelu</li>
+        </ul>
+
+        <h2>Yhteystiedot</h2>
+        <p>📞 0453277008<br>
+        ✉️ <a href="mailto:samit.nyt@gmail.com">samit.nyt@gmail.com</a></p>
+
+        <h2>Ota yhteyttä lomakkeella</h2>
+        <form action="https://formspree.io/f/mayrvjga" method="POST">
+            <input type="text" name="name" placeholder="Nimi" required>
+            <input type="email" name="email" placeholder="Sähköposti" required>
+            <textarea name="message" rows="5" placeholder="Viesti" required></textarea>
+            <button type="submit">Lähetä</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2025 SamIT</p>
+    </footer>
+</body>
+</html>
