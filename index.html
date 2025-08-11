@@ -1,146 +1,128 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SamIT – Edullista IT-apua</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #000;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    h1,
-    h2 {
-      color: #000;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .service {
-      background-color: #f5f5f5;
-      padding: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamIT – Edullista IT-apua</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #000;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
+
+<header>
     <h1>SamIT</h1>
     <nav>
-      <a href="#meista">Meistä</a>
-      <a href="#palvelut">Palvelut</a>
-      <a href="#yhteystiedot">Yhteystiedot</a>
+        <a href="#meista">Meistä</a>
+        <a href="#palvelut">Palvelut</a>
+        <a href="#yhteystiedot">Yhteystiedot</a>
     </nav>
-  </header>
+</header>
 
-  <section>
-    <img src="images/kuva.jpg" alt="SamIT tiimi" />
+<section>
 
     <h2 id="meista">Meistä</h2>
-    <p>
-      SamIT on kahden nuoren, innokkaan lukiolaisen perustama yritys, jonka tavoitteena on tarjota
-      mahdollisimman edullista ja helposti saatavilla olevaa IT-apua. Olemme intohimoisia teknologian
-      käyttäjiä ja ratkaisijoita, ja haluamme auttaa ihmisiä arjen digipulmissa.
-    </p>
+    <p>SamIT on kahden nuoren, innokkaan lukiolaisen perustama yritys, jonka tavoitteena on tarjota 
+       mahdollisimman edullista ja helposti saatavilla olevaa IT-apua. Olemme intohimoisia teknologian 
+       käyttäjiä ja ratkaisijoita, ja haluamme auttaa ihmisiä arjen digipulmissa.</p>
 
-    <p>
-      Erikoisuutemme on ilmaiset kotiinkäynnit – tulemme luoksesi ja ratkaisemme ongelmat paikan päällä,
-      ilman piilokuluja. Meille asiakaslähtöisyys ja ystävällinen palvelu ovat kaiken perusta.
-    </p>
+    <p>Erikoisuutemme on ilmaiset kotiinkäynnit – tulemme luoksesi ja ratkaisemme ongelmat paikan päällä, 
+       ilman piilokuluja. Meille asiakaslähtöisyys ja ystävällinen palvelu ovat kaiken perusta.</p>
 
     <h2 id="palvelut">Palvelut</h2>
     <div class="services">
-      <div class="service">
-        <h3>Tietokoneiden ja läppäreiden huolto</h3>
-        <p>
-          Ratkaisemme hitaat koneet, asennamme ohjelmia ja poistamme viruksia. Autamme myös
-          laitteiden päivityksessä.
-        </p>
-      </div>
-      <div class="service">
-        <h3>Tulostimet ja verkko-ongelmat</h3>
-        <p>Korjaamme tulostinongelmat, asennamme laitteet ja laitamme Wi-Fi-verkon kuntoon.</p>
-      </div>
-      <div class="service">
-        <h3>TV:t ja kodin viihdejärjestelmät</h3>
-        <p>Asennamme ja säädämme televisiot, äänentoistojärjestelmät ja suoratoistopalvelut.</p>
-      </div>
-      <div class="service">
-        <h3>Puhelinapu</h3>
-        <p>Opastamme älypuhelinten käytössä, siirrämme tiedot ja asetamme sovellukset kuntoon.</p>
-      </div>
-      <div class="service">
-        <h3>Tietokoneiden kasaus</h3>
-        <p>Kokoamme tietokoneet toiveidesi mukaan, asennamme käyttöjärjestelmän ja testaamme toiminnan.</p>
-      </div>
-      <div class="service">
-        <h3>Laitteiden käyttöönotto ja opastus</h3>
-        <p>
-          Olipa kyseessä uusi laite tai ohjelma, autamme sen käyttöönotossa ja opetamme tarvittavat
-          taidot.
-        </p>
-      </div>
+        <div class="service">
+            <h3>Tietokoneiden ja läppäreiden huolto</h3>
+            <p>Ratkaisemme hitaat koneet, asennamme ohjelmia ja poistamme viruksia. Autamme myös 
+               laitteiden päivityksessä.</p>
+        </div>
+        <div class="service">
+            <h3>Tulostimet ja verkko-ongelmat</h3>
+            <p>Korjaamme tulostinongelmat, asennamme laitteet ja laitamme Wi-Fi-verkon kuntoon.</p>
+        </div>
+        <div class="service">
+            <h3>TV:t ja kodin viihdejärjestelmät</h3>
+            <p>Asennamme ja säädämme televisiot, äänentoistojärjestelmät ja suoratoistopalvelut.</p>
+        </div>
+        <div class="service">
+            <h3>Puhelinapu</h3>
+            <p>Opastamme älypuhelinten käytössä, siirrämme tiedot ja asetamme sovellukset kuntoon.</p>
+        </div>
+        <div class="service">
+            <h3>Tietokoneiden kasaus</h3>
+            <p>Kokoamme tietokoneet toiveidesi mukaan, asennamme käyttöjärjestelmän ja testaamme toiminnan.</p>
+        </div>
+        <div class="service">
+            <h3>Laitteiden käyttöönotto ja opastus</h3>
+            <p>Olipa kyseessä uusi laite tai ohjelma, autamme sen käyttöönotossa ja opetamme tarvittavat taidot.</p>
+        </div>
     </div>
 
     <h2 id="yhteystiedot">Yhteystiedot</h2>
-    <p>
-      📞 Puhelin:
-      <a href="tel:+358453277008">045 327 7008</a><br />
-      📧 Sähköposti:
-      <a href="mailto:samit.nyt@gmail.com">samit.nyt@gmail.com</a>
-    </p>
+    <p>📞 Puhelin: <a href="tel:+358453277008">045 327 7008</a><br>
+       📧 Sähköposti: <a href="mailto:samit.nyt@gmail.com">samit.nyt@gmail.com</a></p>
 
     <form action="https://formspree.io/f/xdkdyveg" method="POST">
-      <label>Nimi:</label><br />
-      <input type="text" name="name" required /><br /><br />
-      <label>Sähköposti:</label><br />
-      <input type="email" name="email" required /><br /><br />
-      <label>Viesti:</label><br />
-      <textarea name="message" rows="5" required></textarea><br /><br />
-      <button type="submit">Lähetä</button>
+        <label>Nimi:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Sähköposti:</label><br>
+        <input type="email" name="email" required><br><br>
+        <label>Viesti:</label><br>
+        <textarea name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Lähetä</button>
     </form>
-  </section>
+</section>
 
-  <footer>
+<footer>
     <p>© 2025 SamIT – Edullista IT-apua</p>
-  </footer>
+</footer>
+
 </body>
 </html>
+
